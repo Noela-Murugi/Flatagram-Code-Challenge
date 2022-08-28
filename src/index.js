@@ -50,6 +50,6 @@ function addNewComment (){
         })
     })
 }
-
+addNewComment()
 
 })
