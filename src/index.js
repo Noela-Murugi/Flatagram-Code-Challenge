@@ -25,6 +25,7 @@ function getPreviousComments(){
     .catch(err => console.log(`Error: ${err}`));
 
 }
+getPreviousComments()
 
 
 
