@@ -15,6 +15,17 @@ function getImageDetails(id){
 }
 getImageDetails(1)
 
+function getPreviousComments(){
+    fetch (`http://localhost:3000/comments`)
+    .then((res) => res.json())
+    .then((views) => {
+        document.querySelector('#comments-list').innerHTML = views
+        .map((commentsData) => `<li> ${commentsData.content}</li>`).join("");
+    })
+    .catch(err => console.log(`Error: ${err}`));
+
+}
+
 
 
 })
