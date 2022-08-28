@@ -44,6 +44,10 @@ function addNewComment (){
     btn.setAttribute= "btnDelete";
     btn.textContent = "x";
     btn.style.marginLeft = "10px";
+    btn.addEventListener("click", (e)=>{
+        let etarget = e.target
+        etarget.parentNode.remove();
+        })
     })
 }
 
