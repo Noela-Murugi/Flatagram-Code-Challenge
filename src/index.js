@@ -16,4 +16,5 @@ function getImageDetails(id){
 getImageDetails(1)
 
 
+
 })
