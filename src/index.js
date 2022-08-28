@@ -27,6 +27,15 @@ function getPreviousComments(){
 }
 getPreviousComments()
 
-
+function addNewComment (){
+    document.querySelector("#comment-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+    let etarget = e.target;
+//createElement
+    let comment = document.createElement("li");
+    comment.textContent = document.querySelector("#comment").value;
+    document.querySelector("#comments-list").appendChild(comment);
+        etarget.reset();
+    })
 
 })
