@@ -36,6 +36,15 @@ function addNewComment (){
     comment.textContent = document.querySelector("#comment").value;
     document.querySelector("#comments-list").appendChild(comment);
         etarget.reset();
+
+//BONUS
+//delete
+    let btn = document.createElement("button");
+    comment.appendChild(btn);
+    btn.setAttribute= "btnDelete";
+    btn.textContent = "x";
+    btn.style.marginLeft = "10px";
     })
+}
 
 })
